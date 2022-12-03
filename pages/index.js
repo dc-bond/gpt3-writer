@@ -34,7 +34,7 @@ const onUserChangedText = (event) => {
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>ask marcus aurelius</title>
       </Head>
       <div className="container">
         <div className="header">
