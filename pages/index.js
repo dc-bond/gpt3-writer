@@ -46,32 +46,35 @@ const onUserChangedText = (event) => {
           </div>
         </div>
         <div className="prompt-container">
-  <textarea
-    placeholder="start typing here"
-    className="prompt-box"
-    value={userInput}
-    onChange={onUserChangedText}
-  />
-  <div className="prompt-buttons">
-    <a className="generate-button" onClick={callGenerateEndpoint}>
-      <div className="generate">
-        <p>Generate</p>
-      </div>
-    </a>
-  </div>
-  {apiOutput && (
-  <div className="output">
-    <div className="output-header-container">
-      <div className="output-header">
-        <h3>Output</h3>
-      </div>
-    </div>
-    <div className="output-content">
-      <p>{apiOutput}</p>
-    </div>
-  </div>
-)}
-</div>
+          <textarea
+            placeholder="start typing here"
+            className="prompt-box"
+            value={userInput}
+            onChange={onUserChangedText}
+          />
+          <div className="prompt-buttons">
+            <a 
+              className={isGenerating ? 'generate-button loading' : 'generate-button'}
+              onClick={callGenerateEndpoint}
+            >
+              <div className="generate">
+              {isGenerating ? <span class="loader"></span> : <p>Generate</p>}            
+              </div>
+            </a>
+          </div>
+          {apiOutput && (
+          <div className="output">
+            <div className="output-header-container">
+              <div className="output-header">
+                <h3>answer</h3>
+              </div>
+            </div>
+            <div className="output-content">
+              <p>{apiOutput}</p>
+            </div>
+          </div>
+        )}
+        </div>
       </div>
     </div>
   );
