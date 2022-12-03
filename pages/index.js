@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
+import dcbondLogo from '../assets/dcbond-avatar.jpg';
 
 const Home = () => {
 const [userInput, setUserInput] = useState('');
@@ -75,6 +75,18 @@ const onUserChangedText = (event) => {
           </div>
         )}
         </div>
+      </div>
+      <div className="badge-container grow">
+        <a
+          href="https://github.com/dc-bond/gpt3-writer"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="badge">
+            <Image src={dcbondLogo} alt="dcbond logo" />
+            <p>see project on my github repo</p>
+          </div>
+        </a>
       </div>
     </div>
   );
