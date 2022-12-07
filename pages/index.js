@@ -42,7 +42,7 @@ const onUserChangedText = (event) => {
             <h1>Ask Marcus Aurelius</h1>
           </div>
           <div className="header-subtitle">
-            <h2>write a message to the roman emperor to receive his stoic wisdom</h2>
+            <h2>ask the emperor a question and receive his stoic wisdom</h2>
           </div>
         </div>
         <div className="prompt-container">
@@ -78,13 +78,13 @@ const onUserChangedText = (event) => {
       </div>
       <div className="badge-container grow">
         <a
-          href="https://github.com/dc-bond/gpt3-writer"
+          href="https://github.com/dc-bond/gpt3-writer-stoic"
           target="_blank"
           rel="noreferrer"
         >
           <div className="badge">
             <Image src={dcbondLogo} alt="dcbond logo" />
-            <p>see project on my github repo</p>
+            <p>see project on github</p>
           </div>
         </a>
       </div>
